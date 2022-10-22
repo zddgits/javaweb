@@ -1,0 +1,16 @@
+com\zd\utils\CheckCodeUtil.class
+com\zd\web\DeleteByIdServlet.class
+com\zd\web\LoginServlet.class
+com\zd\service\UserService.class
+com\zd\pojo\User.class
+com\zd\web\CheckCodeServlet.class
+com\zd\web\UpdateServlet.class
+com\zd\service\BrandService.class
+com\zd\utils\SqlSessionFactoryUtils.class
+com\zd\web\RegisterServlet.class
+com\zd\mapper\UserMapper.class
+com\zd\mapper\BrandMapper.class
+com\zd\web\SelectByIdServlet.class
+com\zd\web\SelectAllServlet.class
+com\zd\web\AddServlet.class
+com\zd\pojo\Brand.class

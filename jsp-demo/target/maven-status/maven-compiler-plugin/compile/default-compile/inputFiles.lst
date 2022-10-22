@@ -1,0 +1,16 @@
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\LoginServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\utils\SqlSessionFactoryUtils.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\service\UserService.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\mapper\UserMapper.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\CheckCodeServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\RegisterServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\UpdateServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\pojo\User.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\service\BrandService.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\SelectAllServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\utils\CheckCodeUtil.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\SelectByIdServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\AddServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\web\DeleteByIdServlet.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\pojo\Brand.java
+D:\ideaProject\web\jsp-demo\src\main\java\com\zd\mapper\BrandMapper.java
