@@ -1,5 +1,10 @@
 package com.zd.service;
 
-public interface UserService {
+import com.zd.pojo.User;
 
+import java.util.List;
+
+public interface UserService {
+    public List<User> selectAll();
+    public User selectUser(User user);
 }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href="./css/login.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="login" style="height: 350px">
+    <form action="" id="form">
+        <h1 id="loginMsg">LOGIN IN</h1>
+        <div id="errorMsg">{{errorMsg}}</div>
+        <p>Username:<input id="username" v-model="user.username" type="text"></p>
+
+        <p>Password:&nbsp;<input id="password" v-model="user.password" type="password"></p>
+        <div id="subDiv">
+            <input type="button" class="button" value="login up" @click="login">
+            <input type="reset" class="button" value="reset">&nbsp;&nbsp;&nbsp;
+
+        </div>
+    </form>
+</div>
+<script src="js/vue.js"></script>
+<script src="element-ui/lib/index.js"></script>
+<link rel="stylesheet" href="element-ui/lib/theme-chalk/index.css">
+<script src="js/axios-0.18.0.js"></script>
+<script>
+    function getCookie(cname)
+    {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0; i<ca.length; i++)
+        {
+            var c = ca[i].trim();
+            if (c.indexOf(name)==0) return c.substring(name.length+1,c.length-1);
+        }
+        return "";
+    }
+    new Vue({
+        el:"#login",
+        mounted(){
+            let cookie = document.cookie;
+            let cookie1 = getCookie("errorMsg");
+            this.errorMsg = cookie1;
+        },
+        data() {
+            return{
+                errorMsg:"",
+                user: {
+                    id:"",
+                    username:"",
+                    password:""
+                }
+            }
+        },
+        methods: {
+            login() {
+                //发送ajax请求，发送数据
+                axios({
+                    method:"post",
+                    url:"http://localhost:8080/rbac-demo/User/login",
+                    data:this.user
+                }).then(resp =>{
+                    if(resp.data === "success") {
+                        location.href = "http://localhost:8080/rbac-demo/user.html";
+                    }
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>
